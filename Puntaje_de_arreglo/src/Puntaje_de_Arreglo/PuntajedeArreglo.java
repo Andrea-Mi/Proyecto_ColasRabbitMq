@@ -31,4 +31,4 @@ public class PuntajedeArreglo {
 }
 
 //Complejidad temporal: El método recorre el arreglo una sola vez
-// 
+//Complejidad espacial: se utliza la variable puntajeTotal y la variable numero para cumplir con el ciclo del entero  

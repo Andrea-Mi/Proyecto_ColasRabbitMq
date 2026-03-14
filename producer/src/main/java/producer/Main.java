@@ -37,7 +37,7 @@ public class Main {
         try (Connection connection = factory.newConnection();
              Channel channel = connection.createChannel()) {
 
-            // Crear colas si no existen
+            
             for (String bank : BANKS) {
                 channel.queueDeclare(bank, true, false, false, null);
             }
@@ -78,7 +78,7 @@ public class Main {
                         mapper.writeValueAsString(tx)
                                 .getBytes(StandardCharsets.UTF_8);
 
-                // Mensaje persistente
+                
                 channel.basicPublish(
                         "",
                         banco,
